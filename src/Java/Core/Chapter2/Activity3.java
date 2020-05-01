@@ -10,12 +10,12 @@ public class Activity3 {
         scanner.close();
 
         String str = String.valueOf(num);
-        String sum="";
-        int result=0;
+        String sum = "";
+        int result = 0;
 
-        for(int i=0;i<3;i++){
+        for (int i = 0; i < 3; i++) {
             sum += str;
-            result = result+ Integer.valueOf(sum);
+            result = result + Integer.valueOf(sum);
         }
         System.out.println();
         System.out.print("Output: " + result);

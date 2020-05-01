@@ -13,9 +13,9 @@ public class FindTheLongestWord {
 
         String longest = array[0];
 
-        for(String item : array){
+        for (String item : array) {
             int length = item.length();
-            if(length > longest.length()){
+            if (length > longest.length()) {
                 longest = item;
             }
         }

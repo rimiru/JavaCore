@@ -3,7 +3,7 @@ package Java.Core.Chapter5_OOP;
 public class MomoWallet implements ClassC {
     @Override
     public void truTien() {
-        
+
     }
 
     @Override

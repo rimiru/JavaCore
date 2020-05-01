@@ -22,7 +22,7 @@ public class Student {
         this.gpa = gpa;
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -42,7 +42,7 @@ public class Student {
         this.gpa = gpa;
     }
 
-    public String getName(){
+    public String getName() {
         return this.name = "hello " + this.name + "!!!";
     }
 

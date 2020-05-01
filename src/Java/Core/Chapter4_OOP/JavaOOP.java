@@ -17,14 +17,14 @@ public class JavaOOP {
 
         Scanner scanner = new Scanner(System.in);
 
-        studentArray[0] = new Student("Nguyen Van A","20150041","22/08/1997","nam",3.1f);
+        studentArray[0] = new Student("Nguyen Van A", "20150041", "22/08/1997", "nam", 3.1f);
 
-        studentArray[1] = new Student("Nguyen Van B","20154444","22/06/1997","nam",3.9f);
+        studentArray[1] = new Student("Nguyen Van B", "20154444", "22/06/1997", "nam", 3.9f);
 
         System.out.println("Nhap vao MSSV can tim: ");
         String mssv = scanner.nextLine();
-        for (Student st : studentArray){
-            if(st.getMssv().equals(mssv)){
+        for (Student st : studentArray) {
+            if (st.getMssv().equals(mssv)) {
                 System.out.println(st.toString());
                 break;
             }

@@ -1,6 +1,6 @@
 /*
-*Write a Java program to remove the duplicate elements of a given array and return the new length of the array.
-* */
+ *Write a Java program to remove the duplicate elements of a given array and return the new length of the array.
+ * */
 
 package Java.Core.Chapter3;
 
@@ -16,8 +16,8 @@ public class Activity34 {
         int[] arr = new int[lenght];
 
         System.out.println("Input array: ");
-        for (int i=0; i<lenght;i++){
-            System.out.println("array[" + i +"] :");
+        for (int i = 0; i < lenght; i++) {
+            System.out.println("array[" + i + "] :");
             arr[i] = scanner.nextInt();
         }
         scanner.close();
@@ -25,10 +25,10 @@ public class Activity34 {
         System.out.println("Output: " + removeTheDuplicateElements(arr));
     }
 
-    public static int removeTheDuplicateElements(int[] arr){
+    public static int removeTheDuplicateElements(int[] arr) {
         int index = 1;
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] != arr[index-1])
+            if (arr[i] != arr[index - 1])
                 arr[index++] = arr[i];
         }
         return index;

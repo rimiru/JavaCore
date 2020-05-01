@@ -25,12 +25,12 @@ public class Rectangle {
         this.chieuRong = chieuRong;
     }
 
-    public int TinhChuVi(){
-        return (this.chieuDai+this.chieuRong)*2;
+    public int TinhChuVi() {
+        return (this.chieuDai + this.chieuRong) * 2;
     }
 
-    public int TinhDienTich(){
-        return this.chieuDai*this.chieuRong;
+    public int TinhDienTich() {
+        return this.chieuDai * this.chieuRong;
     }
 
     @Override

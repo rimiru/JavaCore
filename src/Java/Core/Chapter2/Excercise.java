@@ -6,27 +6,26 @@ public class Excercise {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the first number: ");
-        int num1=sc.nextInt();
+        int num1 = sc.nextInt();
 
         System.out.println("Input the second number: ");
         int num2 = sc.nextInt();
         sc.close();
 
-        System.out.print("Result: " + multiply(num1,num2));
+        System.out.print("Result: " + multiply(num1, num2));
     }
 
-    public static int multiply(int n1, int n2){
+    public static int multiply(int n1, int n2) {
         int result = 0;
         boolean zeroResult = n1 == 0 || n2 == 0;
         boolean positiveResult = (n1 > 0 && n2 > 0) || (n1 < 0 && n2 < 0);
-        boolean negativeResult = (n1 > 0 && n2 < 0) || (n1 <0 && n2 >0);
+        boolean negativeResult = (n1 > 0 && n2 < 0) || (n1 < 0 && n2 > 0);
 
         // Tinh gia tri tuyet doi cua n1 va n2
         int n1Abs = Math.abs(n1);
         int n2Abs = Math.abs(n2);
 
-        for (int i = 1; i <= n1Abs; i++)
-        {
+        for (int i = 1; i <= n1Abs; i++) {
             result += n2Abs;
         }
 
@@ -38,11 +37,11 @@ public class Excercise {
          */
 
 
-        if (zeroResult){
+        if (zeroResult) {
             result = 0;
-        } else if (positiveResult){
+        } else if (positiveResult) {
             result = result;
-        } else if (negativeResult){
+        } else if (negativeResult) {
             result = -result;
         }
         return result;

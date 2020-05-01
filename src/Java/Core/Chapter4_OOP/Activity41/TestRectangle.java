@@ -9,7 +9,7 @@ public class TestRectangle {
         System.out.println("Nhap chieu dai: ");
         int chieuDai = scanner.nextInt();
 
-        while (chieuDai < 0){
+        while (chieuDai < 0) {
             System.out.println("Chieu dai phai >0. Moi nhap lai: ");
             chieuDai = scanner.nextInt();
         }
@@ -17,14 +17,14 @@ public class TestRectangle {
         System.out.println("Nhap chieu dai: ");
         int chieuRong = scanner.nextInt();
 
-        while (chieuRong < 0){
+        while (chieuRong < 0) {
             System.out.println("Chieu rong phai >0. Moi nhap lai: ");
             chieuRong = scanner.nextInt();
         }
 
         scanner.close();
 
-        Rectangle hcn = new Rectangle(chieuDai,chieuRong);
+        Rectangle hcn = new Rectangle(chieuDai, chieuRong);
 
         System.out.print(hcn.toString());
         System.out.print("\nChu vi hcn la: " + hcn.TinhChuVi());

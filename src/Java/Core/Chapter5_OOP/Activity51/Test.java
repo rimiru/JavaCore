@@ -6,13 +6,13 @@ public class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         QuanLyCanBo qlcb = new QuanLyCanBo();
-        String name = "",age="",gioiTinh = "", diaChi = "";
+        String name = "", age = "", gioiTinh = "", diaChi = "";
 
         System.out.println("Nhap so can bo: ");
         int num = sc.nextInt();
         CanBo[] canBo = new CanBo[num];
 
-        for (int i = 0; i<num; i++){
+        for (int i = 0; i < num; i++) {
             System.out.println("/********************************************/");
             System.out.println("Nhap ho ten: ");
             name = sc.nextLine();
@@ -31,7 +31,7 @@ public class Test {
 
         System.out.println("Nhap ho ten muon tim kiem: ");
         String tk = sc.next();
-        CanBo cbtk = qlcb.timKiem(tk,canBo);
+        CanBo cbtk = qlcb.timKiem(tk, canBo);
         System.out.println("OUtput: ");
         qlcb.hienThiThongTin1CB(cbtk);
 
